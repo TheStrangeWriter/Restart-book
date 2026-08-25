@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESTART — книга, которая заставляет начать заново</title>
+<meta name="description" content="RESTART — книга о переменах, выборе и новом начале.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0b0b0d;color:#f5f5f5;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  background:radial-gradient(circle at 70% 30%,#333 0,#141416 35%,#080809 75%);
+  padding:60px 0;
+}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.badge{
+  display:inline-block;border:1px solid #666;border-radius:30px;
+  padding:8px 16px;color:#ccc;font-size:13px;margin-bottom:22px;
+}
+h1{font-size:clamp(52px,8vw,100px);line-height:.9;letter-spacing:-5px}
+.hero h2{font-size:clamp(25px,4vw,46px);margin:25px 0 18px;line-height:1.05}
+.hero p{font-size:19px;color:#bbb;max-width:580px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-block;padding:15px 25px;border-radius:10px;
+  background:#fff;color:#080808;font-weight:700;transition:.2s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.secondary{background:transparent;color:#fff;border:1px solid #555}
+.cover-wrap{display:flex;justify-content:center}
+.book-cover{
+  width:min(370px,80vw);aspect-ratio:2/3;border-radius:5px;
+  background:linear-gradient(145deg,#eeeeee,#777);
+  color:#090909;padding:42px 30px;position:relative;
+  box-shadow:20px 25px 60px #000;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.cover-small{font-size:13px;letter-spacing:4px}
+.cover-title{font-size:64px;font-weight:900;letter-spacing:-5px}
+.cover-sub{font-size:17px;max-width:240px}
+section{padding:95px 0}
+.section-title{font-size:42px;margin-bottom:18px}
+.section-text{color:#aaa;max-width:720px}
+.dark{background:#111114}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.card{
+  background:#19191d;border:1px solid #29292e;border-radius:16px;padding:28px;
+}
+.card h3{margin-bottom:10px;font-size:21px}.card p{color:#aaa}
+.excerpt{
+  margin-top:35px;padding:35px;border-left:3px solid #fff;
+  background:#151519;border-radius:0 14px 14px 0;
+  color:#ddd;font-size:20px;font-style:italic;
+}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.review{
+  position:relative;background:#17171a;border:1px solid #29292e;
+  border-radius:16px;padding:28px;min-height:190px;
+}
+.review:before{content:"“";font-size:55px;line-height:.5;color:#777}
+.review p{color:#ddd;margin:15px 0}
+.review strong{color:#fff}
+.review .note{
+  margin-top:12px;font-size:11px;color:#666;
+  border-top:1px dashed #333;padding-top:8px;
+}
+.cta{text-align:center;background:linear-gradient(180deg,#171719,#0b0b0d)}
+.cta p{color:#aaa;max-width:650px;margin:15px auto}
+.price{font-size:48px;font-weight:800;margin:20px}
+footer{padding:30px;text-align:center;color:#666;font-size:13px}
+@media(max-width:800px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .cover-wrap{order:-1}
+  .cards,.reviews{grid-template-columns:1fr}
+  section{padding:70px 0}
+  h1{letter-spacing:-3px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="badge">НОВАЯ КНИГА • RESTART</span>
+    <h1>RESTART</h1>
+    <h2>Иногда, чтобы изменить жизнь, нужно начать заново.</h2>
+    <p>
+      Книга о моменте, когда привычная жизнь больше не устраивает,
+      а внутри появляется желание всё изменить.
+    </p>
+    <div class="buttons">
+      <a class="btn" href="#buy">Купить книгу</a>
+      <a class="btn secondary" href="#excerpt">Прочитать отрывок</a>
+    </div>
+  </div>
+
+  <div class="cover-wrap">
+    <!-- ЗАМЕНИ ЭТОТ БЛОК НА СВОЮ ОБЛОЖКУ, ЕСЛИ ОНА ЕСТЬ -->
+    <div class="book-cover">
+      <div class="cover-small">КНИГА</div>
+      <div class="cover-title">RESTART</div>
+      <div class="cover-sub">История о переменах, выборе и новом начале.</div>
+      <div>© Автор</div>
+    </div>
+  </div>
+</div>
+</header>
+
+<section>
+<div class="container">
+  <h2 class="section-title">О чём эта книга?</h2>
+  <p class="section-text">
+    Здесь размести своё настоящее описание книги. Сделай его коротким,
+    эмоциональным и таким, чтобы читателю захотелось узнать продолжение.
+  </p>
+
+  <div class="cards">
+    <div class="card"><h3>Для тех, кто устал</h3><p>Когда кажется, что ты застрял на одном месте и не знаешь, куда двигаться дальше.</p></div>
+    <div class="card"><h3>Для тех, кто хочет перемен</h3><p>История, которая может заставить посмотреть на собственную жизнь под другим углом.</p></div>
+    <div class="card"><h3>Для тех, кто готов начать</h3><p>Не обещание идеальной жизни, а повод сделать первый шаг.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="excerpt" class="dark">
+<div class="container">
+  <h2 class="section-title">Небольшой отрывок</h2>
+  <p class="section-text">Здесь лучше разместить сильный фрагмент из центральной части книги.</p>
+
+  <div class="excerpt">
+    «ВСТАВЬ СЮДА САМЫЙ СИЛЬНЫЙ ОТРЫВОК ИЗ КНИГИ.
+    Лучше выбрать 3–8 предложений, которые заканчиваются на интригующем моменте…»
+  </div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="container">
+  <h2 class="section-title">Что говорят читатели</h2>
+  <p class="section-text">
+    Ниже находятся три готовых места для отзывов. Просто замени текст внутри каждого блока.
+  </p>
+
+  <div class="reviews">
+
+    <!-- ===== ОТЗЫВ 1 ===== -->
+    <div class="review">
+      <p>«ЗДЕСЬ ВСТАВЬТЕ ПЕРВЫЙ ОТЗЫВ ЧИТАТЕЛЯ.»</p>
+      <strong>— Имя читателя</strong>
+      <div class="note">МЕСТО ДЛЯ ОТЗЫВА №1</div>
+    </div>
+
+    <!-- ===== ОТЗЫВ 2 ===== -->
+    <div class="review">
+      <p>«ЗДЕСЬ ВСТАВЬТЕ ВТОРОЙ ОТЗЫВ ЧИТАТЕЛЯ.»</p>
+      <strong>— Имя читателя</strong>
+      <div class="note">МЕСТО ДЛЯ ОТЗЫВА №2</div>
+    </div>
+
+    <!-- ===== ОТЗЫВ 3 ===== -->
+    <div class="review">
+      <p>«ЗДЕСЬ ВСТАВЬТЕ ТРЕТИЙ ОТЗЫВ ЧИТАТЕЛЯ.»</p>
+      <strong>— Имя читателя</strong>
+      <div class="note">МЕСТО ДЛЯ ОТЗЫВА №3</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section class="cta" id="buy">
+<div class="container">
+  <h2 class="section-title">Готов начать свой RESTART?</h2>
+  <p>Замени кнопку ниже на свою ссылку: Kaspi, Telegram, WhatsApp, Instagram или страницу оплаты.</p>
+  <div class="price">ЦЕНА КНИГИ</div>
+  <a class="btn" href="https://wa.me/" target="_blank">Купить книгу</a>
+</div>
+</section>
+
+<footer>
+  © 2026 RESTART • Все права защищены
+</footer>
+
+</body>
+</html>
